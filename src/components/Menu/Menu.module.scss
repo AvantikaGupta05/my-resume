@@ -1,0 +1,56 @@
+@import "../../styles/application.scss";
+
+.menu {
+  height: calc(100vh - 50px);
+  width: 190px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.mweb {
+  display: none;
+}
+@media screen and (max-width: 1240px) {
+  .menu {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .web {
+    display: none;
+  }
+  .mweb {
+    display: block;
+  }
+  .menu {
+    border-radius: 25px 25px 0 0;
+    width: 100%;
+    height: 65px;
+    padding: 10px 0;
+    background-color: $white;
+    box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    @include position(fixed, false, false, 0, 0, 10);
+    &__list {
+      list-style: none;
+      @include flexBox(flex, center, space-around);
+    }
+    &__item {
+      opacity: 0.5;
+      @include flexBox(flex, center, center, false, column);
+      img {
+        width: 24px;
+        height: 24px;
+      }
+      span {
+        margin: 8px 0 0;
+        @include fontStyle(1.2rem, $text-black, 500);
+      }
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+}

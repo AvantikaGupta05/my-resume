@@ -1,0 +1,171 @@
+@import "../../styles/application.scss";
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background: $cadet-blue;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+  }
+}
+
+.date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+  @include fontStyle(1.4rem, $cadet-blue, 500, false, 1px);
+}
+
+.container {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+  &::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: #ffffff;
+    border: 2px solid $cadet-blue;
+    border-radius: 16px;
+    @include position(absolute, calc(50% - 8px), -10px, false, false, 1);
+  }
+  &::before {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: $cadet-blue;
+    @include position(absolute, calc(50% - 1px), 8px);
+  }
+  cursor: pointer;
+  &.right {
+    left: 50%;
+    .date {
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 20px;
+    }
+    &::after {
+      left: -10px;
+    }
+    &::before {
+      left: 8px;
+    }
+  }
+  &.left {
+    left: 0;
+    .date {
+      right: 0;
+      transform: translateX(100%);
+      padding-left: 20px;
+    }
+    .infoWrap {
+      &.left {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+  &:hover {
+    .description {
+      max-height: 250px;
+    }
+  }
+  &:first-of-type {
+    .description {
+      max-height: 250px;
+    }
+  }
+}
+
+.infoWrap {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.info {
+  background-color: $maximum-blue-purple;
+  padding: 15px;
+  @include flexBox(flex, center, center, false, column);
+  &__desg {
+    margin-bottom: 12px;
+    @include fontStyle(1.6rem, $white, 700);
+  }
+  &__company {
+    @include fontStyle(1.4rem, $white, 500, false, false, italic);
+  }
+}
+
+.description {
+  background-color: lighten($thistle, 10%);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease-in-out;
+  ul {
+    padding: 15px 15px 15px 30px;
+    text-align: left;
+    @include fontStyle(1.2rem, $text-black, 500);
+    li {
+      margin: 8px 0;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 0;
+    &:hover {
+      .description {
+        max-height: 350px;
+      }
+    }
+    &:first-of-type {
+      .description {
+        max-height: 350px;
+      }
+    }
+    &.right {
+      left: 0;
+    }
+  }
+
+  .container.left::after,
+  .container.right::after {
+    left: 82px;
+  }
+
+  .container.left::before,
+  .container.right::before {
+    left: 100px;
+    border-color: transparent $cadet-blue transparent transparent;
+  }
+
+  .container.left .date,
+  .container.right .date {
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: right;
+    max-width: 70px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../styles/application.scss";
+
+.title {
+  padding: 80px 0 50px;
+  @include fontStyle(1.8rem, $text-black, 700);
+  @include flexBox(flex, center, center, false, column);
+  &:before {
+    content: "";
+    width: 28px;
+    height: 8px;
+    margin: 12px 0;
+    background-color: $cadet-blue;
+  }
+}

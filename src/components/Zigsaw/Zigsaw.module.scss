@@ -1,0 +1,121 @@
+@import "../../styles/application.scss";
+
+.zigsaw {
+  width: 150px;
+  height: 150px;
+  border: solid $black;
+  border-width: 1px 2px;
+  background-color: $mauvelous;
+  position: relative;
+  cursor: pointer;
+  @include flexBox(flex, flex-end, center);
+  &:first-child {
+    border-width: 2px 2px 1px 2px;
+    align-items: flex-start;
+  }
+  &:last-child {
+    border-width: 1px 2px 2px 2px;
+  }
+  &:nth-child(2) {
+    align-items: flex-start;
+  }
+  &:nth-child(3) {
+    align-items: center;
+  }
+  &:hover,
+  &.active {
+    .toggle {
+      display: block;
+    }
+    .detail {
+      transform: scale(1.1);
+    }
+  }
+  .toggle {
+    display: none;
+  }
+}
+.pic {
+  img {
+    width: 146px;
+    height: 147px;
+  }
+}
+.out {
+  height: 44px;
+  width: 44px;
+  position: absolute;
+  border: 2px solid;
+  border-radius: 50%;
+  z-index: 1;
+  &__right {
+    top: 50%;
+    right: -38px;
+    transform: translateY(-50%);
+    border-left-color: transparent;
+  }
+  &__left {
+    top: 50%;
+    left: -38px;
+    transform: translateY(-50%);
+    border-right-color: transparent;
+  }
+  &__top {
+    left: 50%;
+    top: -38px;
+    transform: translateX(-50%);
+    border-bottom-color: transparent;
+  }
+  &__bottom {
+    left: 50%;
+    bottom: -38px;
+    transform: translateX(-50%);
+    border-top-color: transparent;
+  }
+}
+.in {
+  height: 44px;
+  width: 44px;
+  position: absolute;
+  border: 2px solid;
+  border-radius: 50%;
+  background-color: $white;
+  &__right {
+    top: 50%;
+    right: -7px;
+    transform: translateY(-50%);
+    border-right-color: transparent;
+  }
+  &__left {
+    top: 50%;
+    left: -7px;
+    transform: translateY(-50%);
+    border-left-color: transparent;
+  }
+  &__top {
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top-color: transparent;
+  }
+  &__bottom {
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-color: transparent;
+  }
+}
+
+.detail {
+  height: 110px;
+  border-radius: 50%;
+  @include flexBox(flex, center, center, false, column);
+  &__icon {
+    width: 28px;
+    height: 28px;
+  }
+  &__title {
+    margin: 10px 0;
+    @include fontStyle(1.6rem, $text-black, 700);
+  }
+}

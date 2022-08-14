@@ -1,0 +1,55 @@
+@import "../../styles/application.scss";
+
+.typewriter {
+  @include flexBox(flex);
+  h1 {
+    color: #000;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 4px solid $silver-sand; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.8rem; /* Adjust as needed */
+    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+    max-width: fit-content;
+    @include fontStyle(5.6rem, $cadet-blue, 900);
+  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: $silver-sand;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .typewriter {
+    h1 {
+      font-size: 4.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .typewriter {
+    h1 {
+      font-size: 3.2rem;
+      letter-spacing: 0.3rem;
+    }
+  }
+}
