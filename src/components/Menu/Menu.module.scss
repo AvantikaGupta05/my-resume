@@ -38,7 +38,7 @@
       @include flexBox(flex, center, space-around);
     }
     &__item {
-      opacity: 0.5;
+      opacity: 0.4;
       @include flexBox(flex, center, center, false, column);
       img {
         width: 24px;
@@ -50,6 +50,8 @@
       }
       &.active {
         opacity: 1;
+        filter: invert(60%) sepia(24%) saturate(583%) hue-rotate(139deg)
+          brightness(85%) contrast(94%);
       }
     }
   }

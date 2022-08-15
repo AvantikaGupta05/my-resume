@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Title from "../../components/Title/Title";
 import s from "./Experiences.module.scss";
 
 const Experiences = ({ id, sectionTitle, items }) => {
+  const [active, setActive] = useState(0);
   return (
     <section id={id} className={s.content}>
       <Title text={sectionTitle} />
@@ -10,10 +11,12 @@ const Experiences = ({ id, sectionTitle, items }) => {
         {items.map(({ designation, company, year, description }, index) => {
           return (
             <div
-              className={`${s.container} ${index % 2 === 0 ? s.right : s.left}`}
+              className={`${s.container} ${
+                index % 2 === 0 ? s.right : s.left
+              } ${active === index ? s.active : ""}`}
+              onClick={() => setActive(index)}
             >
               <div className={s.date}>{year}</div>
-              {/* <i className={s.icon}></i> */}
               <div
                 className={`${s.infoWrap} ${
                   index % 2 === 0 ? s.right : s.left
