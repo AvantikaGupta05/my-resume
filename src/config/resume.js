@@ -31,7 +31,6 @@ import draw9 from "../assets/images/draw9.jpg";
 import draw10 from "../assets/images/draw10.jpg";
 import draw11 from "../assets/images/draw11.jpg";
 import craft1 from "../assets/images/craft1.jpg";
-import craft2 from "../assets/images/craft2.jpg";
 import craft4 from "../assets/images/craft4.jpg";
 import craft5 from "../assets/images/craft5.jpg";
 import craft6 from "../assets/images/craft6.jpg";
@@ -231,44 +230,42 @@ export const resume = {
       {
         title: "Art",
         images: [
+          draw8,
+          draw9,
+          draw7,
+          draw5,
+          draw10,
           draw1,
           draw2,
           draw3,
           draw4,
-          draw5,
           draw6,
-          draw7,
-          draw8,
-          draw9,
-          draw10,
           draw11,
-        ],
-      },
-      {
-        title: "Craft",
-        images: [
-          craft1,
-          craft2,
-          craft4,
-          craft5,
-          craft6,
-          craft7,
-          craft8,
-          craft9,
-          craft10,
-          craft11,
-          craft12,
         ],
       },
       {
         title: "Procreate",
         images: [
-          procreate1,
           procreate2,
-          procreate3,
-          procreate4,
           procreate5,
+          procreate4,
+          procreate1,
+          procreate3,
           procreate6,
+        ],
+      },
+      {
+        title: "Craft",
+        images: [
+          craft8,
+          craft1,
+          craft5,
+          craft6,
+          craft10,
+          craft7,
+          craft9,
+          craft11,
+          craft12,
         ],
       },
     ],
