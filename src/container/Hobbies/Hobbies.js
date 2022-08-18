@@ -19,7 +19,6 @@ const Hobbies = ({ id, sectionTitle, items }) => {
                       src={image}
                       alt=""
                       key={key}
-                      loading="lazy"
                     />
                   );
                 })}
