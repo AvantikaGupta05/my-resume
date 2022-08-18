@@ -10,17 +10,20 @@ const Hobbies = ({ id, sectionTitle, items }) => {
         return (
           <div className={s.gallery} key={index}>
             <span className={s.gallery__title}>{title}</span>
-            <div className={s.gallery__wrap}>
-              {images.map((image, key) => {
-                return (
-                  <img
-                    className={s.gallery__img}
-                    src={image}
-                    alt=""
-                    key={key}
-                  />
-                );
-              })}
+            <div className={s.wrap}>
+              <div className={s.gallery__wrap}>
+                {images.map((image, key) => {
+                  return (
+                    <img
+                      className={s.gallery__img}
+                      src={image}
+                      alt=""
+                      key={key}
+                      loading="lazy"
+                    />
+                  );
+                })}
+              </div>
             </div>
           </div>
         );

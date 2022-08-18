@@ -17,7 +17,7 @@ export const menuConfig = [
     type: "topoutbottomin",
     color: "#f595b2",
     icon: About,
-    title: "About Me",
+    title: "About me",
     src: "aboutme",
   },
   {

@@ -22,7 +22,31 @@ import instagram from "../assets/icons/instagram.svg";
 import draw1 from "../assets/images/draw1.jpg";
 import draw2 from "../assets/images/draw2.jpg";
 import draw3 from "../assets/images/draw3.jpg";
+import draw4 from "../assets/images/draw4.jpg";
+import draw5 from "../assets/images/draw5.jpg";
+import draw6 from "../assets/images/draw6.JPG";
+import draw7 from "../assets/images/draw7.JPG";
+import draw8 from "../assets/images/draw8.jpg";
+import draw9 from "../assets/images/draw9.jpg";
+import draw10 from "../assets/images/draw10.jpg";
+import draw11 from "../assets/images/draw11.jpg";
 import craft1 from "../assets/images/craft1.jpg";
+import craft2 from "../assets/images/craft2.jpg";
+import craft4 from "../assets/images/craft4.jpg";
+import craft5 from "../assets/images/craft5.jpg";
+import craft6 from "../assets/images/craft6.jpg";
+import craft7 from "../assets/images/craft7.jpg";
+import craft8 from "../assets/images/craft8.jpg";
+import craft9 from "../assets/images/craft9.jpg";
+import craft10 from "../assets/images/craft10.jpg";
+import craft11 from "../assets/images/craft11.jpg";
+import craft12 from "../assets/images/craft12.jpg";
+import procreate1 from "../assets/images/procreate1.jpg";
+import procreate2 from "../assets/images/procreate2.jpg";
+import procreate3 from "../assets/images/procreate3.jpg";
+import procreate4 from "../assets/images/procreate4.jpg";
+import procreate5 from "../assets/images/procreate5.jpg";
+import procreate6 from "../assets/images/procreate6.gif";
 
 export const resume = {
   about: {
@@ -186,7 +210,7 @@ export const resume = {
         title: "Senior Secondary Education (CBSE)",
         school: "GRM School, Bareilly",
         year: "2014-2015",
-        grade: "8.5",
+        grade: "94.8%",
         unit: "Percentage",
         icon: seniorEducation,
       },
@@ -206,11 +230,46 @@ export const resume = {
     items: [
       {
         title: "Art",
-        images: [draw1, draw2, draw3],
+        images: [
+          draw1,
+          draw2,
+          draw3,
+          draw4,
+          draw5,
+          draw6,
+          draw7,
+          draw8,
+          draw9,
+          draw10,
+          draw11,
+        ],
       },
       {
         title: "Craft",
-        images: [craft1],
+        images: [
+          craft1,
+          craft2,
+          craft4,
+          craft5,
+          craft6,
+          craft7,
+          craft8,
+          craft9,
+          craft10,
+          craft11,
+          craft12,
+        ],
+      },
+      {
+        title: "Procreate",
+        images: [
+          procreate1,
+          procreate2,
+          procreate3,
+          procreate4,
+          procreate5,
+          procreate6,
+        ],
       },
     ],
   },

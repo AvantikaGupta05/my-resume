@@ -1,7 +1,7 @@
 @import "../../styles/application.scss";
 
 .content {
-  padding-bottom: 180px;
+  padding-bottom: 200px;
 }
 .gallery {
   &__title {
@@ -20,5 +20,17 @@
   &__img {
     height: 200px;
     margin-right: 20px;
+  }
+}
+.wrap {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 5rem;
+    background-image: linear-gradient(to left, $white, rgba(255, 255, 255, 0));
   }
 }
