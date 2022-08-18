@@ -54,7 +54,9 @@ export const resume = {
     name: "Avantika Gupta",
     title: "Frontend Developer",
     description:
-      "A motivated, creative, and hardworking Frontend Developer with keen interest in UI development. Looking for a challenging career and to work with an organization which appreciates innovation and gives scope to enhance knowledge and skills to reach the pinnacle in computing with determination, dedication, and hard work.",
+      "Being creative and driven, my interest lies in developing dynamic and responsive user interfaces. In my own time, I enjoy doing arts & crafts and bringing colors to life.",
+    subtitle:
+      "As a patient listener and optimist, I always choose to embrace a situation rather than run from it.",
     items: [
       {
         icon: linkedin,
