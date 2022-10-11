@@ -1,6 +1,5 @@
 import Qualifications from "../assets/icons/qualifications.svg";
 import About from "../assets/icons/about.svg";
-import Contact from "../assets/icons/contact.svg";
 import Experience from "../assets/icons/experience.svg";
 import Hobbies from "../assets/icons/hobbies.svg";
 import Skills from "../assets/icons/skills.svg";

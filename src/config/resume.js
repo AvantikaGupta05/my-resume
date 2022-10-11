@@ -31,15 +31,11 @@ import draw9 from "../assets/images/draw9.jpg";
 import draw10 from "../assets/images/draw10.jpg";
 import draw11 from "../assets/images/draw11.jpg";
 import craft1 from "../assets/images/craft1.jpg";
-import craft4 from "../assets/images/craft4.jpg";
 import craft5 from "../assets/images/craft5.jpg";
-import craft6 from "../assets/images/craft6.jpg";
-import craft7 from "../assets/images/craft7.jpg";
 import craft8 from "../assets/images/craft8.jpg";
 import craft9 from "../assets/images/craft9.jpg";
 import craft10 from "../assets/images/craft10.jpg";
 import craft11 from "../assets/images/craft11.jpg";
-import craft12 from "../assets/images/craft12.jpg";
 import procreate1 from "../assets/images/procreate1.jpg";
 import procreate2 from "../assets/images/procreate2.jpg";
 import procreate3 from "../assets/images/procreate3.jpg";
@@ -56,7 +52,7 @@ export const resume = {
     description:
       "Being creative and driven, my interest lies in developing dynamic and responsive user interfaces. In my own time, I enjoy doing arts & crafts and bringing colors to life.",
     subtitle:
-      "As a patient listener and optimist, I always choose to embrace a situation rather than run from it.",
+      "I believe that the solution is not the learning but the path to the solution is actual learning. As a patient listener and optimist, I always choose to embrace a situation rather than run from it. ",
     items: [
       {
         icon: linkedin,
@@ -258,17 +254,7 @@ export const resume = {
       },
       {
         title: "Craft",
-        images: [
-          craft8,
-          craft1,
-          craft5,
-          craft6,
-          craft10,
-          craft7,
-          craft9,
-          craft11,
-          craft12,
-        ],
+        images: [craft8, craft1, craft5, craft10, craft9, craft11],
       },
     ],
   },

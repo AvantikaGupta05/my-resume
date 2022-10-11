@@ -10,8 +10,7 @@ import Hobbies from "./container/Hobbies/Hobbies";
 import { resume } from "./config/resume";
 
 function App() {
-  const { about, skills, qualifications, experiences, hobbies, contact } =
-    resume;
+  const { about, skills, qualifications, experiences, hobbies } = resume;
   return (
     <div className={s.app}>
       <div className={s.container}>
