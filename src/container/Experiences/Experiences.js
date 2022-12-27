@@ -3,7 +3,7 @@ import Title from "../../components/Title/Title";
 import s from "./Experiences.module.scss";
 
 const Experiences = ({ id, sectionTitle, items }) => {
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(1);
   return (
     <section id={id} className={s.content}>
       <Title text={sectionTitle} />
@@ -26,13 +26,15 @@ const Experiences = ({ id, sectionTitle, items }) => {
                   <span className={s.info__desg}>{designation}</span>
                   <span className={s.info__company}>{company}</span>
                 </div>
-                <div className={s.description}>
-                  <ul>
-                    {description.map((item) => {
-                      return <li>{item}</li>;
-                    })}
-                  </ul>
-                </div>
+                {description.length > 0 && (
+                  <div className={s.description}>
+                    <ul>
+                      {description.map((item) => {
+                        return <li>{item}</li>;
+                      })}
+                    </ul>
+                  </div>
+                )}
               </div>
             </div>
           );

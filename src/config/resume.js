@@ -12,6 +12,7 @@ import vue from "../assets/logos/vue.webp";
 import vuex from "../assets/logos/vuex.webp";
 import webpack from "../assets/logos/webpack.webp";
 import wordpress from "../assets/logos/wordpress.webp";
+import stencil from "../assets/logos/stencil.png";
 import education from "../assets/icons/education.svg";
 import seniorEducation from "../assets/icons/seniorEducation.svg";
 import btech from "../assets/icons/btech.svg";
@@ -105,6 +106,10 @@ export const resume = {
         img: angular,
       },
       {
+        name: "StencilJS",
+        img: stencil,
+      },
+      {
         name: "Redux",
         img: redux,
       },
@@ -139,45 +144,33 @@ export const resume = {
     sectionTitle: "Experiences",
     items: [
       {
-        designation: "Senior Software Engineer",
-        company: "Paytm, Noida",
-        year: "Apr 2022 – Present",
-        description: [
-          "Led a feature of header footer revamp across Paytm website.",
-          "Helped with server migration and cleanup tasks.",
-        ],
+        designation: "Software Engineer 2",
+        company: "Intuit, Bengaluru",
+        year: "Dec 2022 – Present",
+        description: [],
       },
       {
-        designation: "Software Engineer",
+        designation: "Senior Software Engineer",
         company: "Paytm, Noida",
-        year: "Jul 2021 - Mar 2022",
+        year: "Jul 2021 – Dec 2022",
         description: [
+          "Developed Investor Relations website for Paytm and its admin panel.",
+          "Crafted an SDK of 25+ storefront driven common widgets that helped various verticals by speeding up development process.",
           "Converted Paytm foundation website from static to storefront driven.",
           "Delivered multiple Paytm games.",
-          "Crafted an SDK of 25+ storefront driven common widgets that helped various verticals by speeding up development process.",
         ],
       },
       {
         designation: "Senior Frontend Developer - 1",
         company: "Josh Technology Group, Gurugram",
-        year: "Oct 2020 - Jul 2021",
+        year: "Aug 2019 - Jul 2021",
         description: [
-          "Supervised multiple features in the project and mentored team members.",
+          "Supervised multiple features in the project, mentored team members and was involved in recruitment process across various levels.",
+          "Worked on a healthcare project built on AngularJS framework. Delivered features end to end from requirement gathering, UI development, integration to feature release.",
           "Assisted my team with POC and transition of application from Angular to React.",
           "White labelling automation for different clients.",
           "Performed POC on MJML framework for efficient email designing.",
-          "Recruitment process involvement across various levels.",
-        ],
-      },
-      {
-        designation: "Frontend Developer",
-        company: "Josh Technology Group, Gurugram",
-        year: "Aug 2019 - Sep 2020",
-        description: [
-          "Designed robust and extensible product functionality, maintaining good quality code, and ensuring pixel-perfection and responsiveness of the designs.",
           "Collaborated on a website built on WordPress using Beaver builder plugin for fast development.",
-          "Worked on a healthcare project built on AngularJS framework. Delivered features end to end from requirement gathering, UI development, integration to feature release.",
-          "Added support of outlook clients for email templates.",
         ],
       },
       {
